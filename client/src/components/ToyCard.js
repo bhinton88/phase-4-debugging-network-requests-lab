@@ -8,6 +8,7 @@ function ToyCard({ toy, onDeleteToy, onUpdateToy }) {
       method: "DELETE",
     }).then((r) => {
       if (r.ok) {
+        console.log(r)
         onDeleteToy(toy);
       }
     });
